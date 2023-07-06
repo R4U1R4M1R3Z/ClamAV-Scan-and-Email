@@ -12,7 +12,7 @@ sender_email = 'usuario@correo.com'
 recipient_email = 'usuario@correo.com'
 
 # Ejecutar el comando clamscan -r /
-process = subprocess.Popen(['clamscan', '-r', '/root'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.Popen(['clamscan', '-r', '/'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 output, error = process.communicate()
 
 # Obtener el resumen del escaneo
